@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Ping</title>
+</head>
+
+<body>
+    <div id="app">
+
+        <form class="col pingForm">
+            <div class="container">
+                <h1>Ping<a href="traceroute.html" style="font-size: 13px;">Aller a Traceroute</a></h1>
+                <p>Veuillez remplir les champs ci dessous pour effecturer un ping</p>
+            </div>
+
+            <div class="mb-3">
+                <label for="ip" class="form-label">Adresse IP/host</label>
+                <input type="text" name="ip" class="form-control" id="ip" aria-describedby="emailHelp">
+                <div id="ipHelp" class="form-text">Entrer l'host ou l'adresse IP</div>
+            </div>
+            <div class="mb-3">
+                <label for="npacket" class="form-label">Nombre de Packet</label>
+                <input type="number" name="nPacket" class="form-control" id="npacket" aria-describedby="emailHelp">
+                <div id="nPacketHelp" class="form-text">Entrer le nombre de packet a envoyer</div>
+            </div>
+            <div class="mb-3">
+                <label for="ttl" class="form-label">Time To Live (TTL)</label>
+                <input type="number" name="ttl" class="form-control" id="ttl" aria-describedby="emailHelp">
+                <div id="ttlHelp" class="form-text">Entrer la valeur du TTL</div>
+            </div>
+            <div class="mb-3">
+                <label for="packetSize" class="form-label">Taille du packet</label>
+                <input type="number" name="packetSize" class="form-control" id="packetSize" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="timeOut" class="form-label">Temps Mort</label>
+                <input type="number" name="timeout" class="form-control" id="timeOut" aria-describedby="emailHelp">
+                <div id="timeOutHelp" class="form-text">Valeur du temps mort</div>
+            </div>
+            <button type="submit" class="btn btn-pink">Faire le Ping</button>
+        </form>
+        <div class="ping-result">
+        </div>
+
+    </div>
+    <script src="js/ping_api.js"></script>
+</body>
+
+</html>

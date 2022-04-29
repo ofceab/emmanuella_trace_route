@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Traceroute</title>
+</head>
+
+<body>
+    <div id="app">
+        <!DOCTYPE html>
+        <html lang="en">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+            <link rel="stylesheet" href="css/main.css">
+            <title>Ping</title>
+        </head>
+
+        <body>
+            <div id="app">
+
+                <form class="col tracerouteForm">
+                    <div class="container">
+                        <h1>Traceroute <a href="ping.html" style="font-size: 13px;">Aller a Ping</a></h1>
+                        <p>Veuillez remplir les champs ci dessous pour effecturer un Traceroute</p>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="ipAdresse" class="form-label">Adresse IP/host</label>
+                        <input type="text" name="ip" class="form-control" id="ipAdresse" aria-describedby="textHelp">
+                        <div id="textHelp" class="form-text">Entrer l'host ou l'adresse IP</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="houblonsNumber" class="form-label">Nombre de Houblons</label>
+                        <input type="text" name="nbHoublon" class="form-control" id="houblonsNumber" aria-describedby="textHelp">
+                        <div id="textHelp" class="form-text">Entrer le nombre de Houblons</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="dropDown1"  class="form-label">Protocol</label>
+                        <input type="radio" name="protocol" value="icmp"  id="icmp"><label for="icmp">ICMP</label>
+                        <input type="radio" name="protocol" value="udp"  id="udp"><label for="udp">UDP</label>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="timeOut" class="form-label">Temps Mort</label>
+                        <input type="text"  name="timeOut" class="form-control" id="timeOut" aria-describedby="textHelp">
+                        <div id="timeOutHelp" class="form-text">Valeur du temps mort</div>
+                    </div>
+                    <button type="submit" class="btn btn-pink">Effectuer un Traceroute</button>
+
+                </form>
+                <div class="traceroute-result">
+                    dd
+                </div>
+
+            </div>
+    </div>
+    <script src="js/traceroute_api.js"></script>
+</body>
+
+</html>
