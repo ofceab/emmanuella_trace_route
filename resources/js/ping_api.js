@@ -26,7 +26,7 @@ const getPingInfo = async (e) => {
 
     const requestQueryString = `host=${ip.value}&packetsNu=${nPacket.value}&packetSize=${packetSize.value}&ttl=${ttl.value}&timeOut=${timeout.value}`
 
-    let res = await fetch(`http://34.229.230.190:8080/ping?${requestQueryString}`, {
+    let res = await fetch(`http://34.207.127.105:8080/ping?${requestQueryString}`, {
         method: 'GET',
         mode: 'cors',
         cache: 'no-cache',

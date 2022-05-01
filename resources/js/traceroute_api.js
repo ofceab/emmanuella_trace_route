@@ -26,7 +26,7 @@ const getTracerouteInfo = async (e) => {
 
     const requestQueryString = `host=${ip.value}&hopsMaxNumber=${nbHoublon.value}&timeOut=${timeOut.value}&protocol=${protocol.value.toLowerCase()}`
 
-    let res = await fetch(`http://34.229.230.190:8080/traceroute?${requestQueryString}`, {
+    let res = await fetch(`http://34.207.127.105:8080/traceroute?${requestQueryString}`, {
         method: 'GET',
         mode: 'cors',
         cache: 'no-cache',
